@@ -1,0 +1,34 @@
+.home {
+  position: relative;
+  height: 100vh;
+}
+
+.profile-card {
+  max-width: 540px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-card:hover {
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2);
+}
+
+.personal-img {
+  height: 300px;
+  margin: 10px;
+}
+
+.info-body {
+  margin-left: 1.2rem;
+}
+
+.list-table {
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+}

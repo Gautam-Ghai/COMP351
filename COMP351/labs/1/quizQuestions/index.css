@@ -1,0 +1,69 @@
+.note {
+  color: red;
+}
+.letStyle {
+  color: blue;
+}
+
+.variableStyle {
+  color: green;
+}
+
+.functionStyle {
+  color: brown;
+}
+
+.numStyle {
+  color: purple;
+}
+
+.jsCode {
+  background-color: #dfdfdf;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.submit,
+.reset {
+  background-color: blue;
+  color: white;
+  width: 4rem;
+  padding: 5px;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.submit:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+.reset {
+  background-color: red;
+}
+
+.reset:hover {
+  background-color: darkred;
+  color: white;
+}
+
+footer {
+  bottom: 0;
+  margin: 1.2rem;
+  position: static;
+}
+
+button {
+  background-color: #4a4a4a;
+  color: #dadada;
+  width: 4rem;
+  padding: 5px;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+button:hover {
+  background-color: #dadada;
+  color: #4a4a4a;
+  cursor: pointer;
+}

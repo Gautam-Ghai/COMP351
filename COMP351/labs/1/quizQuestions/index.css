@@ -36,6 +36,7 @@
 .submit:hover {
   background-color: skyblue;
   color: black;
+  cursor: pointer;
 }
 
 .reset {
@@ -45,6 +46,7 @@
 .reset:hover {
   background-color: darkred;
   color: white;
+  cursor: pointer;
 }
 
 footer {

@@ -1,0 +1,32 @@
+.card {
+  margin: 50px;
+}
+
+img {
+  height: 25vh;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  bottom: 0;
+  margin: 1.2rem;
+  position: fixed;
+}
+
+button {
+  background-color: #4a4a4a;
+  color: #dadada;
+  width: 4rem;
+  padding: 5px;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+button:hover {
+  background-color: #dadada;
+  color: #4a4a4a;
+}

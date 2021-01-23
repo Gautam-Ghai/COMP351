@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gautam Ghai - COMP 351</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/admin.css">
+    </head>
+    <body>
+        <div class="home">
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <a href="../../../../index.html" class="navbar-brand">Gautam Ghai</a>
+                </div>
+            </nav>
+            <div class="container">
+                <h1 class="jumbotron">Welcome to the Admin Portal!</h1>
+                <hr />
+                
+                <form class="question">
+                    <label for="ques1">Question:</label><br />
+                    <input type="text" name="ques" class="question" id="question"/><br />
+                    <input type="radio" name="ansOption" value="a">
+                    <input type="text" name="ans" class="answer" id="answer-op1"/><br />
+                    <input type="radio" name="ansOption" value="b">
+                    <input type="text" name="ans" class="answer" id="answer-op2"/><br />
+                    <input type="radio" name="ansOption" value="c">
+                    <input type="text" name="ans" class="answer" id="answer-op3"/><br />
+                    <input type="radio" name="ansOption" value="d">
+                    <input type="text" name="ans" class="answer" id="answer-op4"/><br />
+                    <input type="submit" class="btn btn-primary" onclick="saveQuestion()">
+                    <button class="btn btn-success" onclick="deleteQuestion()" >Delete</button>
+                    <input type="reset" class="btn btn-danger " >
+                </form>
+                <hr />
+                <h2>Quiz Questions: </h2>
+                <div id="QuestionsTillNow"></div>
+            </div>
+            <footer>
+                <a href="index.html"><button class="back-button">Back</button></a>
+            </footer>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>\
+        <script src="js/admin.js"></script>
+    </body>
+</html>

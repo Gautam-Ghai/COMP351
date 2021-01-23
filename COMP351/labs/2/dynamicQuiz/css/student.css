@@ -1,0 +1,30 @@
+footer {
+  bottom: 0;
+  margin: 1.2rem;
+  position: fixed;
+}
+
+.back-button {
+  background-color: #4a4a4a;
+  color: #dadada;
+  width: 4rem;
+  padding: 5px;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.back-button:hover {
+  background-color: #dadada;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+
+.question {
+  font-weight: 600;
+}
+.answers {
+  margin: 20px;
+}
+.ansOption {
+  margin: 0.5rem;
+}

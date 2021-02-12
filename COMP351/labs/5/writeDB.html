@@ -37,12 +37,14 @@
                 const xhttp = new XMLHttpRequest();
                 const name = document.getElementById('name').value;
                 const score = document.getElementById('score').value;
-                xhttp.open("GET", "https://divanshu-comp351.herokuapp.com/COMP351/labs/5/writeDB.html?name="+name+"&score="+score, true);
-                xhttp.send();
-                xhttp.onreadystatechange = function() {
+                if(name !="" && score !=""){
+                    xhttp.open("GET", "https://divanshu-comp351.herokuapp.com/COMP351/labs/5/writeDB.html?name="+name+"&score="+score, true);
+                    xhttp.send();
+                    xhttp.onreadystatechange = function() {
                     if(this.readyState == 4 && this.status == 200) {
                         document.getElementById('success').innerHTML = this.responseText;
                     }
+                }
                 }
             }
         </script>

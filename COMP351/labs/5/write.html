@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Write into MySQL</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/write.css">
+    </head>
+    <body>
+        <div class="home">
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <a href="../../../index.html" class="navbar-brand">Gautam Ghai</a>
+                </div>
+            </nav>
+            <div class="card">
+                <h2>Enter the Name and Score:</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name.."  required/>
+                    <br />
+                    <label for="score">Score</label>  
+                    <input type="number" id="score" name="score" placeholder="Score.." min="0" max="100" required/>
+                    <br />
+                    <input type="submit" value="Submit" onclick="writeIntoDB()">
+                    <p id="success"></p>
+                </form>
+            </div>
+            <footer>
+                <a href="../../COMP351.html"><button>Back</button></a>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script>
+            function writeIntoDB() {
+                const xhttp = new XMLHttpRequest();
+                const name = document.getElementById('name').value;
+                const score = document.getElementById('score').value;
+                xhttp.open("GET", "https://divanshu-comp351.herokuapp.com/COMP351/labs/5/writeDB.html?name="+name+"&score="+score, true);
+                xhttp.send();
+                xhttp.onreadystatechange = function() {
+                    if(this.readyState == 4 && this.status == 200) {
+                        document.getElementById('success').innerHTML = this.responseText;
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

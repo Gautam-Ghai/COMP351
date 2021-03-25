@@ -1,0 +1,68 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+.table td,
+.table th {
+  padding: 1.2em;
+  text-align: center;
+  vertical-align: top;
+  border-top: 1px solid #4a4a4a;
+}
+
+.table td > a.btn {
+  padding: 0em 0.6em;
+  font-size: 1.3em;
+  margin: 0.3em;
+}
+
+#deleteBtn {
+  color: red;
+}
+#updateBtn {
+  color: blue;
+}
+
+#deleteBtn:hover {
+  color: #ab1919;
+}
+#updateBtn:hover {
+  color: rgb(0, 0, 150);
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  bottom: 0;
+  margin: 1.2rem;
+  position: fixed;
+}
+
+button {
+  background-color: #4a4a4a;
+  color: #dadada;
+  width: 4rem;
+  padding: 5px;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+button:hover {
+  background-color: #dadada;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+
+.newQues {
+  width: 8rem;
+  background-color: #fcff4e;
+  color: #252525;
+}
+
+.newQues:hover {
+  background-color: #f2ff00;
+  color: #252525;
+}

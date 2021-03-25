@@ -1,0 +1,36 @@
+#option3 {
+  display: none;
+}
+#option4 {
+  display: none;
+}
+.active {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+footer {
+  bottom: 0;
+  margin: 1.2rem;
+  position: fixed;
+}
+
+.backbutton {
+  background-color: #4a4a4a;
+  color: #dadada;
+  width: 4rem;
+  padding: 5px;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.backbutton:hover {
+  background-color: #dadada;
+  color: #4a4a4a;
+  cursor: pointer;
+}
+.btn {
+  padding: 5px 16px;
+}
